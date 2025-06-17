@@ -1,0 +1,20 @@
+/* Parent wrapper takes full height */
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--Neutral20);
+    padding: 1.875rem;
+    box-sizing: border-box;
+}
+
+/* Container fills remaining height */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Neutral10);
+    border-radius: 0.875rem;
+    margin-top: 2.3125rem;
+}

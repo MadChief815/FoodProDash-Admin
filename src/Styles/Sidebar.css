@@ -1,0 +1,58 @@
+.nav-link {
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: NunitoSans;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 4px;
+    color: var(--Neutral100);
+    background-color: transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link.active {
+    color: var(--Neutral10);
+    background-color: var(--PrimaryOrange);
+}
+
+.nav-link.inactive:hover {
+    background-color: var(--Neutral20);
+}
+
+.log-out {
+    margin-top: 12px;
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'NunitoSans', sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--Neutral100);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.log-out .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.logout-button:hover {
+    color: var(--PrimaryRed);
+}

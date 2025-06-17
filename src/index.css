@@ -1,0 +1,38 @@
+/* Base font-size (desktop) */
+html {
+  font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Color Variables */
+:root {
+  --Neutral10: #FFFFFF;
+  --Neutral20: #F5F5F5;
+  --Neutral30: #EDEDED;
+  --Neutral40: #D6D6D6;
+  --Neutral50: #C2C2C2;
+  --Neutral60: #878787;
+  --Neutral70: #606060;
+  --Neutral80: #383838;
+  --Neutral90: #403A3A;
+  --Neutral100: #101010;
+
+  --PrimaryOrange: #FE8C00;
+  --PrimaryYellow: #FFD33C;
+  --PrimaryGreen: #00B69B;
+  --PrimaryBlue: #7239EA;
+  --PrimaryRed: #F14141;
+}

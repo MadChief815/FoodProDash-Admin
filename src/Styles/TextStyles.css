@@ -1,0 +1,208 @@
+:root {
+    --font-family-main: 'NunitoSans', sans-serif;
+
+    --fs12: 0.75rem;
+    --fs13: 0.8125rem;
+    --fs14: 0.875rem;
+    --fs16: 1rem;
+    --fs17: 1.0625rem;
+    --fs18: 1.125rem;
+    --fs20: 1.25rem;
+    --fs24: 1.5rem;
+    --fs26: 1.625rem;
+    --fs28: 1.75rem;
+    --fs30: 1.875rem;
+    --fs32: 2rem;
+
+    --Neutral10: #FFFFFF;
+    --Neutral20: #F5F5F5;
+    --Neutral30: #EDEDED;
+    --Neutral40: #D6D6D6;
+    --Neutral50: #C2C2C2;
+    --Neutral60: #878787;
+    --Neutral70: #606060;
+    --Neutral80: #383838;
+    --Neutral90: #403A3A;
+    --Neutral100: #101010;
+    --PrimaryOrange: #FE8C00;
+    --PrimaryYellow: #FFD33C;
+    --PrimaryGreen: #50CD89;
+    --PrimaryBlue: #7239EA;
+    --PrimaryRed: #F14141;
+
+}
+
+/* Light 12 */
+.L12N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs12);
+    font-weight: 300;
+    color: var(--Neutral100);
+}
+
+.L12Orange {
+    font-family: var(--font-family-main);
+    font-size: var(--fs12);
+    font-weight: 300;
+    color: var(--PrimaryOrange);
+}
+
+/* Semi Bold 12 */
+.SB12N60 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs13);
+    font-weight: 600;
+    color: var(--Neutral60);
+}
+
+/* Bold 12 */
+.B12N60 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs13);
+    font-weight: 700;
+    color: var(--Neutral60);
+}
+
+.B12Orange {
+    font-family: var(--font-family-main);
+    font-size: var(--fs13);
+    font-weight: 700;
+    color: var(--PrimaryOrange);
+}
+
+/* Bold 13 */
+.B13N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs13);
+    font-weight: 700;
+    color: var(--Neutral100);
+}
+
+/* Semi Bold 14 */
+.SB14N90 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs14);
+    font-weight: 600;
+    color: var(--Neutral90);
+}
+
+/* Bold 14 */
+.B14N80 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs14);
+    font-weight: 700;
+    color: var(--Neutral80);
+}
+
+/* Regular 16 */
+.R16N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 400;
+    color: var(--Neutral100);
+}
+
+/* Semi Bold 16 */
+.SB16N10 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 600;
+    color: var(--Neutral10);
+}
+
+.SB16N60 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 600;
+    color: var(--Neutral60);
+}
+
+.SB16N70 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 600;
+    color: var(--Neutral70);
+}
+
+.SB16N90 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 600;
+    color: var(--Neutral90);
+}
+
+.SB16N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 600;
+    color: var(--Neutral100);
+}
+
+.SB16Green {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 600;
+    color: var(--PrimaryGreen);
+}
+
+.SB16Red {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 600;
+    color: var(--PrimaryRed);
+}
+
+/* Bold 16 */
+.B16Orange {
+    font-family: var(--font-family-main);
+    font-size: var(--fs16);
+    font-weight: 700;
+    color: var(--PrimaryOrange);
+}
+
+/* Bold 24 */
+.B24N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs24);
+    font-weight: 700;
+    color: var(--Neutral100);
+}
+
+/* Bold 28 */
+.B28N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs30);
+    font-weight: 700;
+    color: var(--Neutral100);
+}
+
+/* Semi Bold 30 */
+.SB30N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs30);
+    font-weight: 600;
+    color: var(--Neutral100);
+}
+
+/* Bold 30 */
+.B30N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs30);
+    font-weight: 700;
+    color: var(--Neutral100);
+}
+
+/* Bold 32 */
+.EB32N100 {
+    font-family: var(--font-family-main);
+    font-size: var(--fs32);
+    font-weight: 800;
+    color: var(--Neutral100);
+}
+
+.EB32Orange {
+    font-family: var(--font-family-main);
+    font-size: var(--fs32);
+    font-weight: 800;
+    color: var(--PrimaryOrange);
+}

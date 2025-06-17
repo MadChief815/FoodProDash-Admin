@@ -1,0 +1,125 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Neutral10: #FFFFFF;
+    --Neutral20: #F5F5F5;
+    --Neutral30: #EDEDED;
+    --Neutral40: #D6D6D6;
+    --Neutral50: #C2C2C2;
+    --Neutral60: #878787;
+    --Neutral70: #606060;
+    --Neutral80: #383838;
+    --Neutral90: #403A3A;
+    --Neutral100: #101010;
+    --PrimaryOrange: #FE8C00;
+    --PrimaryYellow: #FFD33C;
+    --PrimaryGreen: #50CD89;
+    --PrimaryBlue: #7239EA;
+    --PrimaryRed: #F14141;
+}
+
+/* Layout wrapper */
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Image section: takes 2/3 width */
+.main-image-section {
+    flex: 2;
+    position: relative;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form section: takes 1/3 width */
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-container {
+    width: 80%;
+    max-width: 300px;
+}
+
+.registerHere-or-SignIn {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user-input {
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+.orange-stroke {
+    background-color: var(--PrimaryOrange);
+    height: 2px;
+}
+
+.black-stroke {
+    background-color: var(--Neutral100);
+    height: 2px;
+}
+
+.rememberMeBox {
+    height: 0.9rem;
+    width: 0.9rem;
+    border: 1px solid var(--Neutral100);
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.CheckedrememberMeBox {
+    height: 0.9rem;
+    width: 0.9rem;
+    border: 1px solid var(--PrimaryOrange);
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none; 
+}
+
+.text-hover {
+    transition: opacity 0.2s ease;
+}
+
+.text-hover:hover {
+    opacity: 0.7;
+}
+
+
+.submit-button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--PrimaryOrange);
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    /* subtle elevation */
+    transition: box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.submit-button:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
