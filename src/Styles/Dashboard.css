@@ -1,0 +1,36 @@
+.dashboardPage-details-card-CONT {
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+    /* Horizontal space around the whole row */
+    display: flex;
+    gap: 1.875rem;
+    /* Space between each card */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+}
+
+.dashboardPage-details-card {
+    background-color: var(--Neutral10);
+    height: 9rem;
+    border-radius: 0.875rem;
+    padding: 1rem;
+    flex: 1;
+    /* Takes equal space */
+    min-width: 17.5rem;
+    box-sizing: border-box;
+    box-shadow: '0 4px 20px rgba(0,0,0,0.05)';
+}
+
+
+.dashboardPage-details-card-icon {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 1.4rem;
+}
+
+.dashboardPage-details-card-progressIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}

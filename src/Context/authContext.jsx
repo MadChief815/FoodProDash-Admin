@@ -15,6 +15,19 @@ export const AuthProvider = ({ children }) => {
         return localStorage.getItem('username') || '';
     });
 
+    const [userphonenumber, setUserPhoneNumber] = useState(() => {
+        return localStorage.getItem('userphonenumber') || '';
+    });
+
+    const [dob, setDOB] = useState(() => {
+        return localStorage.getItem('dob') || '';
+    });
+
+
+    const [image, setImage] = useState(() => {
+        return localStorage.getItem('image') || '';
+    });
+
     // Sync to localStorage on change
     useEffect(() => {
         localStorage.setItem('isLoggedIn', isLoggedIn);
@@ -23,18 +36,32 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         localStorage.setItem('email', email);
     }, [email]);
-
     useEffect(() => {
         localStorage.setItem('username', username);
     }, [username]);
+    useEffect(() => {
+        localStorage.setItem('userphonenumber', userphonenumber);
+    }, [userphonenumber]);
+    useEffect(() => {
+        localStorage.setItem('dob', dob);
+    }, [dob]);
+    useEffect(() => {
+        localStorage.setItem('image', image);
+    }, [image]);
 
     const login = () => setIsLoggedIn(true);
     const logout = () => {
         setIsLoggedIn(false);
         setEmail('');
         setUsername('');
+        setImage('');
+        setUserPhoneNumber('');
+        setDOB('');
         localStorage.removeItem('email');
         localStorage.removeItem('username');
+        localStorage.removeItem('image');
+        localStorage.removeItem('userphonenumber');
+        localStorage.removeItem('dob');
         localStorage.setItem('isLoggedIn', 'false');
     };
 
@@ -48,6 +75,12 @@ export const AuthProvider = ({ children }) => {
                 setEmail,
                 username,
                 setUsername,
+                image,
+                setImage,
+                userphonenumber,
+                setUserPhoneNumber,
+                dob,
+                setDOB
             }}
         >
             {children}

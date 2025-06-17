@@ -14,7 +14,7 @@ import LogoutIcon2 from "../assets/SVGs/Dashboard/logout2.svg";
 
 const TopBar = () => {
     // User Data
-    const { username, logout } = useAuth();
+    const { username, image, logout } = useAuth();
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -47,7 +47,12 @@ const TopBar = () => {
             }}
         >
             {/* User Image */}
-            <img src={NoUserImg} alt="Logo" style={{ width: '2.75rem', height: '2.75rem', borderRadius: "1.375rem" }} />
+            {image ? (
+                <img src={image} alt="Logo" style={{ width: '2.75rem', height: '2.75rem', borderRadius: "1.375rem" }} />
+            ) : (
+                <img src={NoUserImg} alt="Logo" style={{ width: '2.75rem', height: '2.75rem', borderRadius: "1.375rem" }} />
+            )}
+            
             {/* User Name */}
             <div
                 className="B14N80"
